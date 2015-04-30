@@ -101,6 +101,47 @@ a:hover                        { text-decoration:none; }
                     color: #fa8343;
                     text-decoration: underline;
                 }
+    .wrap-footer .middle-box {
+        overflow: hidden;
+        padding: 28px 0;
+    }
+        .wrap-footer .middle-box .wrap {
+            float: left;
+        }
+            .logo {
+                float: left;
+                margin-right: 45px;
+            }
+            .desc-company {
+                float: right;
+                width: 280px;
+                margin-top: 5px;
+                font-size: 16px;
+            }
+        .contact-box {
+            float: right;
+        }
+            .tell {
+
+            }
+                .tell a {
+                    font-size: 24px;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+                    .tell span {
+                        font-weight: 700;
+                    }
+            .btn-callback {
+                width: 200px;
+                height: 50px;
+                color: #fff;
+                border: 2px solid #FA8343;
+                background: transparent;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
