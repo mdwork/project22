@@ -41,12 +41,12 @@ a:hover                        { text-decoration:none; }
 .clearfix                      { display: inline-block; width: 100% }
 
 .content {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 100%;
-	max-width: 980px;
-	margin: 0 auto;
+    /*-moz-box-sizing: border-box;*/
+    /*-webkit-box-sizing: border-box;*/
+	/*box-sizing: border-box;*/
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
@@ -71,7 +71,36 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.wrap-footer {
+	background: #3F4553;
+    color: #fff;
+}
+.wrap-footer a {
+    color: #fff;
+}
+    .wrap-footer .top-box {
+        padding: 32px 0 33px;
+        border-bottom: 1px solid #5A6070;
+    }
+        .nav {
+            overflow: hidden;
+            margin: 0 auto;
+        }
+            .nav li {
+                float: left;
+                margin-left: 35px;
+            }
+            .nav li:first-child {
+                margin-left: 0;
+            }
+                .nav a {
+                    font-size: 16px;
+                }
+                .wrap-footer .nav a:hover,
+                .wrap-footer .nav .active a {
+                    color: #fa8343;
+                    text-decoration: underline;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
