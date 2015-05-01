@@ -77,35 +77,64 @@ a:hover                        { text-decoration:none; }
     .wrap-header .btn-callback {
         color: #FA8343;
     }
-.nav-header {
+.nav.nav-header {
+    overflow: visible;
+    height: 70px;
     background: #FA8343;
 }
-    .nav.nav-header li {
+    .nav.nav-header > ul > li {
+        position: relative;
+        height: 70px;
         margin-left: 0;
     }
-    .nav-header li:hover:before {
+    .nav-header > ul > li:hover:before {
         background: #FA8343;
     }
-    .nav-header li.active,
-    .nav-header li.active:before,
-    .nav-header li:hover {
+    .nav-header > ul > li.active,
+    .nav-header > ul > li.active:before,
+    .nav-header > ul > li:hover {
         background: #495061;
     }
-        .nav-header li:before,
-        .nav-header li:after {
+        .nav-header > ul > li:before,
+        .nav-header > ul > li:after {
             content: '';
             display: block;
             width: 100%;
             height: 13px;
         }
-        .nav-header a {
+        .nav-header > ul > li > a {
             display: block;
-            margin: 11px 20px;
+            margin: 12px 20px;
             color: #fff;
         }
-        .nav-header a:hover {
+        .nav-header > ul > li > a:hover {
             text-decoration: underline;
         }
+        .nav-header > ul > li:hover .sub-menu {
+            display: block;
+        }
+        .sub-menu {
+            display: none;
+            position: absolute;
+            top: 70px;
+            width: 265px;
+            background: #495061;
+        }
+            .sub-menu li {
+                display: block;
+                float: none;
+                padding: 11px 0 12px 30px;
+                border-bottom: 1px solid #5B6472;
+            }
+                .sub-menu a {
+                    color: #fff;
+                    font-size: 15px;
+                    text-decoration: none;
+                }
+                .sub-menu a:hover {
+                    color: #fa8343;
+                    text-decoration: underline;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -133,14 +162,14 @@ a:hover                        { text-decoration:none; }
             overflow: hidden;
             margin: 0 auto;
         }
-            .nav li {
+            .nav > ul > li {
                 float: left;
                 margin-left: 35px;
             }
-            .nav li:first-child {
+            .nav > ul > li:first-child {
                 margin-left: 0;
             }
-                .nav a {
+                .nav > ul > a {
                     font-size: 16px;
                 }
                 .wrap-footer .nav a:hover,
