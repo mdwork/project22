@@ -55,11 +55,57 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.wrapper {
+    min-height: 100%;
+}
+.wrapper:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 253px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.wrap-header .top-box,
+.wrap-header .top-box a {
+    color: #b6b6b6;
+}
+    .wrap-header .desc-company {
+        color: #b2b2b2;
+    }
+    .wrap-header .btn-callback {
+        color: #FA8343;
+    }
+.nav-header {
+    background: #FA8343;
+}
+    .nav.nav-header li {
+        margin-left: 0;
+    }
+    .nav-header li:hover:before {
+        background: #FA8343;
+    }
+    .nav-header li.active,
+    .nav-header li.active:before,
+    .nav-header li:hover {
+        background: #495061;
+    }
+        .nav-header li:before,
+        .nav-header li:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 13px;
+        }
+        .nav-header a {
+            display: block;
+            margin: 11px 20px;
+            color: #fff;
+        }
+        .nav-header a:hover {
+            text-decoration: underline;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -72,6 +118,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrap-footer {
+    margin-top: -253px;
 	background: #3F4553;
     color: #fff;
 }
@@ -101,11 +148,13 @@ a:hover                        { text-decoration:none; }
                     color: #fa8343;
                     text-decoration: underline;
                 }
-    .wrap-footer .middle-box {
+    .wrap-footer .middle-box,
+    .wrap-header .middle-box {
         overflow: hidden;
         padding: 28px 0;
     }
-        .wrap-footer .middle-box .wrap {
+        .wrap-footer .middle-box .wrap,
+        .wrap-header .middle-box .wrap {
             float: left;
         }
             .logo {
@@ -146,7 +195,8 @@ a:hover                        { text-decoration:none; }
                 font-weight: bold;
                 letter-spacing: 1px;
             }
-    .wrap-footer .bottom-box {
+    .wrap-footer .bottom-box,
+    .wrap-header .top-box {
         overflow: hidden;
         padding: 11px 0;
         background: #383D4A;
@@ -183,6 +233,8 @@ a:hover                        { text-decoration:none; }
         .list-contact {
             overflow: hidden;
             float: left;
+            margin-top: 5px;
+            font-size: 14px;
         }
             .list-contact li {
                 float: left;
@@ -191,27 +243,94 @@ a:hover                        { text-decoration:none; }
             .list-contact li:first-child {
                 margin-left: 0;
             }
-            .list-contact .address {
-
+            .list-contact li:before {
+                content: '';
+                float: left;
+                width: 20px;
+                height: 20px;
+                background: url("../images/header/contact_icons.png") no-repeat;
+            }
+            .list-contact .mail:before {
+                width: 15px;
+                margin: 1px 7px 0 0;
+            }
+            .list-contact .address:before {
+                width: 17px;
+                margin: 3px 7px 0 0;
+                background-position: -42px 0;
+            }
+            .list-contact .skype:before {
+                width: 14px;
+                margin: 3px 7px 0 0;
+                background-position: -79px 0;
+            }
+            .list-contact .question:before {
+                margin-right: 7px;
+                background-position: -125px 0;
             }
                 .list-contact address {
                     display: inline;
                 }
+                .list-contact a {
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+                .list-contact .question:hover a {
+                    color: #fa8343;
+                }
+                .list-contact .question:hover:before {
+                    background: url("../images/header/hover_question_icon.png") no-repeat;
+                }
         .list-soc-links {
             overflow: hidden;
             float: right;
-            margin-right: 30px;
+            margin: 3px 30px 0 0;
         }
             .list-soc-links li {
                 float: left;
                 margin-left: 1px;
+                background: url("../images/header/soc_icons.png") no-repeat;
+            }
+            .list-soc-links .vk {
+                background-position: -28px 0;
+            }
+            .list-soc-links .tw {
+                background-position: -57px 0;
+                opacity: 0.6;
+            }
+            .list-soc-links .g {
+                background-position: -85px 0;
+            }
+            .list-soc-links .mail {
+                background-position: -113px 0;
+            }
+            .list-soc-links .youtube {
+                background-position: -142px 0;
+            }
+            .list-soc-links li:hover {
+                background: url("../images/header/soc_btns_hover.png") no-repeat;
+            }
+            .list-soc-links .vk:hover {
+                background-position: -28px 0;
+            }
+            .list-soc-links .tw:hover {
+                background-position: -57px 0;
+                opacity: 0.6;
+            }
+            .list-soc-links .g:hover {
+                background-position: -85px 0;
+            }
+            .list-soc-links .mail:hover {
+                background-position: -113px 0;
+            }
+            .list-soc-links .youtube:hover {
+                background-position: -142px 0;
             }
                 .list-soc-links a {
                     display: block;
                     width: 27px;
                     height: 27px;
                     text-indent: -9999px;
-                    background: url("../images/header/soc_icons.png") no-repeat;
                 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
