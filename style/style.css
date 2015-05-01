@@ -74,9 +74,6 @@ a:hover                        { text-decoration:none; }
     .wrap-header .desc-company {
         color: #b2b2b2;
     }
-    .wrap-header .btn-callback {
-        color: #FA8343;
-    }
 .nav.nav-header {
     overflow: visible;
     height: 70px;
@@ -147,6 +144,7 @@ a:hover                        { text-decoration:none; }
 }
     .list-big-squares {
         overflow: hidden;
+        margin-bottom: 155px;
     }
         .list-big-squares li {
             position: relative;
@@ -186,6 +184,15 @@ a:hover                        { text-decoration:none; }
                     font-weight: bold;
                     text-transform: uppercase;
                 }
+    .list-service {
+        overflow: hidden;
+        margin-bottom: 90px;
+    }
+        .list-service li {
+            display: inline-table;
+            width: 31.66%;
+            margin-left: 2.5%;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -261,15 +268,25 @@ a:hover                        { text-decoration:none; }
                     .tell span {
                         font-weight: 700;
                     }
-            .btn-callback {
+            .btn {
                 width: 200px;
                 height: 50px;
-                color: #fff;
+                color: #FA8343;
                 border: 2px solid #FA8343;
                 background: transparent;
                 text-transform: uppercase;
                 font-weight: bold;
                 letter-spacing: 1px;
+
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+            }
+            .btn:hover {
+                color: #fff;
+                background: #FA8343;
+            }
+            .wrap-footer .btn {
+                color: #fff;
             }
     .wrap-footer .bottom-box,
     .wrap-header .top-box {
