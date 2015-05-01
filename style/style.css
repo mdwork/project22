@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:15px 'Open Sans', sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:15px 'Open Sans', sans-serif; background:#fff; color:#212121; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea {
 	padding:0;
 	margin:0;
@@ -144,7 +144,7 @@ a:hover                        { text-decoration:none; }
 }
     .list-big-squares {
         overflow: hidden;
-        margin-bottom: 155px;
+        margin-bottom: 85px;
     }
         .list-big-squares li {
             position: relative;
@@ -181,6 +181,10 @@ a:hover                        { text-decoration:none; }
                     font-weight: bold;
                     text-transform: uppercase;
                 }
+    .wrap-list-service {
+        padding-top: 70px;
+        background: #F9F9F9;
+    }
     .list-service {
         overflow: hidden;
         margin-bottom: 95px;
@@ -217,6 +221,60 @@ a:hover                        { text-decoration:none; }
                 margin-bottom: 25px;
                 line-height: 1.7;
             }
+    .wrap-info-block {
+        overflow: hidden;
+        position: relative;
+    }
+        .custom-bg-info-block {
+            background: #fff;
+        }
+        .wrap-info-block .content {
+            overflow: hidden;
+            position: relative;
+            z-index: 100;
+            background: #EEF0F1;
+        }
+        .wrap-info-block:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            background: #EEF0F1;
+        }
+            .wrap-info-block .left-block {
+                float: left;
+                width: 47%;
+                padding: 65px 3.5% 30px 0;
+                background: #fff;
+            }
+                .section h2 {
+                    margin-bottom: 30px;
+                    font-size: 27px;
+                    color: #212121;
+                    text-transform: uppercase;
+                }
+                .wrap-info-block .left-block p {
+                    margin-bottom: 30px;
+                    font-size: 16px;
+                    line-height: 1.7;
+                }
+            .wrap-info-block .right-block {
+                overflow: hidden;
+                padding: 65px 5.7% 30px;
+                background: #EEF0F1;
+            }
+                .wrap-info-block .right-block p {
+                    margin-bottom: 15px;
+                    font-size: 15px;
+                    line-height: 1.7;
+                }
+                .list-news {}
+                    .list-news li {
+                        margin-bottom: 20px;
+                    }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -300,7 +358,9 @@ a:hover                        { text-decoration:none; }
                 background: transparent;
                 text-transform: uppercase;
                 font-weight: bold;
+                text-align: center;
                 letter-spacing: 1px;
+                cursor: pointer;
 
                 -webkit-transition: 0.5s;
                 transition: 0.5s;
@@ -311,6 +371,11 @@ a:hover                        { text-decoration:none; }
             }
             .wrap-footer .btn {
                 color: #fff;
+            }
+            .btn-more-info {
+                display: inline-block;
+                height: auto;
+                padding: 13px 0;
             }
     .wrap-footer .bottom-box,
     .wrap-header .top-box {
