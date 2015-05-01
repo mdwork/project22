@@ -114,7 +114,7 @@ a:hover                        { text-decoration:none; }
             }
             .desc-company {
                 float: right;
-                width: 280px;
+                width: 300px;
                 margin-top: 5px;
                 font-size: 16px;
             }
@@ -122,9 +122,13 @@ a:hover                        { text-decoration:none; }
             float: right;
         }
             .tell {
-
+                float: left;
+                padding: 3px 0 4px 45px;
+                margin-top: 4px;
+                background: url("../images/header/tell_icon.png") left center no-repeat;
             }
                 .tell a {
+                    margin-right: 13px;
                     font-size: 24px;
                     font-weight: 600;
                     text-decoration: none;
@@ -142,6 +146,73 @@ a:hover                        { text-decoration:none; }
                 font-weight: bold;
                 letter-spacing: 1px;
             }
+    .wrap-footer .bottom-box {
+        overflow: hidden;
+        padding: 11px 0;
+        background: #383D4A;
+    }
+        .wrap-search {
+            float: right;
+            height: 35px;
+            padding: 0 15px;
+            background: #5C616F;
+        }
+            .wrap-search .text {
+                width: 151px;
+                margin-top: 9px;
+                background: transparent;
+                border: none;
+                color: #fff;
+            }
+            .wrap-search .text::-webkit-input-placeholder {color: #fff;}
+            .wrap-search .text::-moz-placeholder          {color: #fff;}
+            .wrap-search .text:-moz-placeholder           {color: #fff;}
+            .wrap-search .text:-ms-input-placeholder      {color: #fff;}
+
+            .wrap-search .search {
+                width: 15px;
+                height: 15px;
+                margin-top: 10px;
+                background: url("../images/header/search_icon.png") no-repeat;
+                border: none;
+                text-indent: -9999px;
+            }
+            .wrap-search .search:hover {
+                opacity: 0.8;
+            }
+        .list-contact {
+            overflow: hidden;
+            float: left;
+        }
+            .list-contact li {
+                float: left;
+                margin-left: 27px;
+            }
+            .list-contact li:first-child {
+                margin-left: 0;
+            }
+            .list-contact .address {
+
+            }
+                .list-contact address {
+                    display: inline;
+                }
+        .list-soc-links {
+            overflow: hidden;
+            float: right;
+            margin-right: 30px;
+        }
+            .list-soc-links li {
+                float: left;
+                margin-left: 1px;
+            }
+                .list-soc-links a {
+                    display: block;
+                    width: 27px;
+                    height: 27px;
+                    text-indent: -9999px;
+                    background: url("../images/header/soc_icons.png") no-repeat;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
