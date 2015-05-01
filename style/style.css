@@ -324,6 +324,7 @@ a:hover                        { text-decoration:none; }
         position: relative;
         overflow: hidden;
         background: #fff;
+        font-size: 16px;
     }
         .wrap-advantages:before {
             content: '';
@@ -338,6 +339,7 @@ a:hover                        { text-decoration:none; }
             overflow: hidden;
             position: relative;
             z-index: 100;
+            padding-bottom: 20px;
         }
             .wrap-advantages .custom-bg {
                 background: #F0F2F3;
@@ -348,12 +350,46 @@ a:hover                        { text-decoration:none; }
                     padding-top: 50px;
                     background: #F0F2F3;
                 }
+                    .wrap-advantages .list-advantages {
+                        margin-right: 20px;
+                    }
+                        .wrap-advantages .list-advantages li {
+                            margin-bottom: 32px;
+                        }
+                            .wrap-advantages .list-marker {
+                                float: left;
+                                width: 40px;
+                                margin: 4px 30px 0 0;
+                            }
+                            .wrap-advantages .left-block .list-marker {
+                                height: 40px;
+                                text-align: center;
+                                text-indent: -9999px;
+                                background: #495061 url("../images/content/ok_icon.png") no-repeat center;
+                            }
+                            .wrap-advantages .text {
+                                display: block;
+                                overflow: hidden;
+                            }
                 .wrap-advantages .right-block {
                     overflow: hidden;
                     width: 50%;
                     padding-top: 50px;
                     background: #fff;
+                    margin-left: 12%;
                 }
+                    .wrap-advantages .right-block .list-advantages,
+                    .wrap-advantages .right-block h2 {
+                        margin-left: 12%;
+                    }
+                            .wrap-advantages .right-block .list-marker {
+                                padding: 8px 0 9px;
+                                text-align: center;
+                                background: #FA8343;
+                                font-size: 17px;
+                                font-weight: bold;
+                                color: #fff;
+                            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
