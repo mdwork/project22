@@ -155,9 +155,6 @@ a:hover                        { text-decoration:none; }
             background: #495061;
             color: #fff;
         }
-        .list-big-squares li:nth-child(3n + 1) {
-            margin-left: 0;
-        }
         .list-big-squares li:first-child {
             background: url("../images/content/bg_block.jpg") repeat-y #FA8343;
         }
@@ -186,13 +183,40 @@ a:hover                        { text-decoration:none; }
                 }
     .list-service {
         overflow: hidden;
-        margin-bottom: 90px;
+        margin-bottom: 95px;
+        color: #696f7c;
     }
         .list-service li {
             display: inline-table;
-            width: 31.66%;
-            margin-left: 2.5%;
+            width: 30%;
+            margin: 0 0 95px 3.7%;
         }
+        .list-big-squares li:nth-child(3n + 1),
+        .list-service li:nth-child(3n + 1) {
+            margin-left: 0;
+        }
+            .list-service .wrap-img {
+                display: table;
+                width: 100%;
+                height: 85px;
+            }
+                .list-service .wrap-img span {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            .list-service .name {
+                display: block;
+                margin-bottom: 15px;
+                color: #212121;
+                font-size: 17px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            .list-service p {
+                margin-bottom: 25px;
+                line-height: 1.7;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
