@@ -320,6 +320,40 @@ a:hover                        { text-decoration:none; }
             .list-btns .call:hover {
                 border-color: #FA8343;
             }
+    .wrap-advantages {
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+    }
+        .wrap-advantages:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            background: #F0F2F3;
+        }
+        .wrap-advantages .content {
+            overflow: hidden;
+            position: relative;
+            z-index: 100;
+        }
+            .wrap-advantages .custom-bg {
+                background: #F0F2F3;
+            }
+                .wrap-advantages .left-block {
+                    float: left;
+                    width: 50%;
+                    padding-top: 50px;
+                    background: #F0F2F3;
+                }
+                .wrap-advantages .right-block {
+                    overflow: hidden;
+                    width: 50%;
+                    padding-top: 50px;
+                    background: #fff;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
