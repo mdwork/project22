@@ -703,6 +703,111 @@ a:hover                        { text-decoration:none; }
                     text-indent: -9999px;
                 }
 /*----------------------------------------------------------------------------------*/
+/*-------------------------------------POPUP----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.popup-box {
+    z-index: 9999;
+    left: 50%;
+    position: relative;
+    width: 400px;
+    margin: 50px 0 50px -200px;
+    text-align: center;
+    /*display: none;*/
+    padding: 5px;
+    background-color: #fff;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 300;
+}
+.close-btn-popup {
+    position: absolute;
+    right: -35px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    color: #CB2025;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    background: url("../images/close.png") no-repeat;
+}
+
+#bg-popup {
+    /*display: none;*/
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.popup-box .wrap-form {
+    margin: 40px 40px 50px;
+}
+.popup-box .top {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.popup-box .text {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #626262;
+}
+.list-input-form li {
+    margin-bottom: 20px;
+}
+.list-input-form input,
+.list-input-form textarea {
+    padding: 11px 15px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #D2D4D7;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.list-input-form input:focus,
+.list-input-form textarea:focus {
+    border: 1px solid #838891;
+}
+.list-input-form textarea {
+    height: 188px;
+    resize: none;
+    font-size: 12px;
+}
+.list-input-form .text input {
+    background: url("../images/sprite_form.png") no-repeat 275px 11px;
+}
+.list-input-form .email input {
+    background: url("../images/sprite_form.png") no-repeat 275px -55px;
+}
+.list-input-form .btn {
+    width: 100%;
+    color: #fff;
+    background: #FA8343;
+}
+.list-input-form .btn:hover {
+    color: #FA8343;
+    background: #fff;
+}
+.wrap-form-popup {
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+/*----------------------------------------------------------------------------------*/
 /*-------------------------------------SLIDER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrap-slider {
