@@ -390,6 +390,66 @@ a:hover                        { text-decoration:none; }
                                 font-weight: bold;
                                 color: #fff;
                             }
+    .wrap-goods {
+        padding: 75px 0;
+        background: #f9f9f9;
+    }
+        .list-goods li {
+            display: inline-table;
+            width: 23%;
+            margin-left: 2.3%;
+            text-align: center;
+            background: #fff;
+
+            -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.1);
+            -moz-box-shadow:    0px 0px 4px 0px rgba(50, 50, 50, 0.1);
+            box-shadow:         0px 0px 4px 0px rgba(50, 50, 50, 0.1);
+        }
+        .list-goods li:hover {
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.3);
+            -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.3);
+            box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.3);
+        }
+        .list-goods li:first-child {
+            margin-left: 0;
+        }
+            .list-goods .wrap {
+                margin: 35px;
+            }
+                .list-goods .name {
+                    position: relative;
+                    display: block;
+                    height: 65px;
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+                    .list-goods .name:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        width: 65px;
+                        height: 1px;
+                        margin-left: -33px;
+                        background: #E6E7E9;
+                    }
+                .list-goods .wrap-foto {
+                    display: table;
+                    height: 210px;
+                    width: 100%;
+                }
+                    .list-goods .wrap-foto span {
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                .list-goods .desc {
+                    display: block;
+                    margin-bottom: 35px;
+                }
+                .list-goods .btn {
+                    width: 100%;
+                    max-width: 200px;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -466,7 +526,7 @@ a:hover                        { text-decoration:none; }
                         font-weight: 700;
                     }
             .btn {
-                width: 200px;
+                width: 196px;
                 height: 50px;
                 color: #FA8343;
                 border: 2px solid #FA8343;
