@@ -600,6 +600,10 @@ a:hover                        { text-decoration:none; }
             .list-contact li:first-child {
                 margin-left: 0;
             }
+            .list-contact li:hover a,
+            .list-contact li:hover {
+                color: #fa8343;
+            }
             .list-contact li:before {
                 content: '';
                 float: left;
@@ -611,15 +615,24 @@ a:hover                        { text-decoration:none; }
                 width: 15px;
                 margin: 1px 7px 0 0;
             }
+            .list-contact .mail:hover:before {
+                background: url("../images/header/contact_icons_hover.png") 0 1px no-repeat;
+            }
             .list-contact .address:before {
                 width: 17px;
                 margin: 3px 7px 0 0;
                 background-position: -42px 0;
             }
+            .list-contact .address:hover:before {
+                background: url("../images/header/contact_icons_hover.png") -34px 0 no-repeat;
+            }
             .list-contact .skype:before {
                 width: 14px;
                 margin: 3px 7px 0 0;
                 background-position: -79px 0;
+            }
+            .list-contact .skype:hover:before {
+                background: url("../images/header/contact_icons_hover.png") -65px -1px no-repeat;
             }
             .list-contact .question:before {
                 margin-right: 7px;
@@ -631,9 +644,6 @@ a:hover                        { text-decoration:none; }
                 .list-contact a {
                     font-size: 14px;
                     text-decoration: none;
-                }
-                .list-contact .question:hover a {
-                    color: #fa8343;
                 }
                 .list-contact .question:hover:before {
                     background: url("../images/header/hover_question_icon.png") no-repeat;
