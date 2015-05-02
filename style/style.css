@@ -692,18 +692,26 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SLIDER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-#slider1_container,
 .wrap-slides {
-    position: relative;
-    margin: 0 auto;
-    top: 0;
-    left: 0;
-    width: 1300px;
-    height: 500px;
+    margin-top: -35px;
+}
+.wrap-foto{
+    height: 100%;
+}
+.slide,
+#slider1_container,
+.inner-slide {
+    overflow: hidden;
+    max-height: 500px;
 }
 .wrap-slides img {
-    width: 100%;
-    max-height: 400px;
+    position: absolute;
+    left: 50%;
+    width: 1920px;
+    max-width: 1920px;
+    max-height: 500px;
+    height: 100%;
+    margin-left: -960px;
 }
 .jssora21l {
 

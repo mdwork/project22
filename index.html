@@ -86,39 +86,45 @@
         </div><!--end WRAP-HEADER-->
 
         <!--Don't delete style attribute and tag style, it needs for correct work slider-->
-        <div id="slider1_container" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
-            <div u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
-                <div>
-                    <img src="images/red.jpg">
+        <div class="wrap-slides">
+            <div id="slider1_container" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+                <div u="slides" class="inner-slide" style="position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
+                    <div class="slide">
+                        <div class="wrap-foto"><img src="images/content/slide1.jpg"></div>
+
+                        <div class="text">
+
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="wrap-foto"><img src="images/content/slide2.jpg"></div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="wrap-foto"><img src="images/content/slide3.jpg"></div>
+                    </div>
                 </div>
 
-                <div>
-                    <img src="images/red.jpg">
+                <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
+                    <div u="prototype"></div>
                 </div>
 
-                <div>
-                    <img src="images/red.jpg">
-                </div>
+                <style type="text/css">
+                    .jssora21l, .jssora21r {
+                        display: block;
+                        position: absolute;
+                        width: 55px;
+                        height: 55px;
+                        cursor: pointer;
+                        background: url(../img/a21.png) center center no-repeat;
+                        overflow: hidden;
+                    }
+                </style>
+
+                <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;"></span>
+                <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;"></span>
             </div>
-
-            <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
-                <div u="prototype"></div>
-            </div>
-
-            <style type="text/css">
-                .jssora21l, .jssora21r {
-                    display: block;
-                    position: absolute;
-                    width: 55px;
-                    height: 55px;
-                    cursor: pointer;
-                    background: url(../img/a21.png) center center no-repeat;
-                    overflow: hidden;
-                }
-            </style>
-
-            <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;"></span>
-            <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;"></span>
         </div>
 
         <div class="content wrap-content">
