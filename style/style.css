@@ -690,5 +690,28 @@ a:hover                        { text-decoration:none; }
                     text-indent: -9999px;
                 }
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------OTHER----------------------------------------*/
+/*-------------------------------------SLIDER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+#slider1_container,
+.wrap-slides {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 1300px;
+    height: 500px;
+}
+.slide-triagle-left,
+.slide-triagle-right {
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url(../img/a21.png) center center no-repeat;
+    overflow: hidden;
+}
+.navigation {
+    bottom: 26px; right: 6px;
+}

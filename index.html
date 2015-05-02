@@ -3,8 +3,12 @@
 <head>
     <title>Index</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jssor.js"></script>
+    <script src="js/jssor.slider.js"></script>
+    <script src="js/commonJs.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
@@ -81,7 +85,28 @@
             </nav>
         </div><!--end WRAP-HEADER-->
 
-        <div class="slider"></div><!--end SLIDER -->
+        <div id="slider1_container">
+            <div u="slides" class="wrap-slides">
+                <div>
+                    <img src="images/red.jpg">
+                </div>
+
+                <div>
+                    <img src="images/red.jpg">
+                </div>
+
+                <div>
+                    <img src="images/red.jpg">
+                </div>
+            </div>
+
+            <div u="navigator" class="navigation">
+                <div u="prototype"></div>
+            </div>
+
+            <span u="arrowleft" class="slide-triagle-left"></span>
+            <span u="arrowright" class="slide-triagle-right"></span>
+        </div><!--end SLIDER -->
 
         <div class="content wrap-content">
             <ul class="list-big-squares">
@@ -446,8 +471,5 @@
             </div>
         </div><!--end BOTTOM-BOX-->
     </footer>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/commonJs.js"></script>
 </body>
 </html>
