@@ -7,9 +7,14 @@ $(document).ready(function () {
     $('.wrap-form-ajax').load("form.html #form-ajax", function(){
         $(".btn-popup").click(function(){
             $('body').css('overflow','hidden');
+
+            $('#bg-popup, .wrap-form-popup').css('top', $(window).scrollTop())
+
             $('#bg-popup').fadeIn(300);
             $('#box_1').fadeIn(300);
             $('.wrap-form-popup').fadeIn(300);
+
+
         });
 
         $('.close-btn-popup, .wrap-form-popup').click(function (e) {

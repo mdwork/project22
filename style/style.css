@@ -155,7 +155,7 @@ a:hover                        { text-decoration:none; }
             background: #495061;
             color: #fff;
         }
-        .list-big-squares li:first-child {
+        .list-big-squares li:hover {
             background: url("../images/content/bg_block.jpg") repeat-y #FA8343;
         }
             .list-big-squares li:after {
@@ -187,7 +187,6 @@ a:hover                        { text-decoration:none; }
     }
     .list-service {
         overflow: hidden;
-        margin-bottom: 95px;
         color: #696f7c;
     }
         .list-service li {
@@ -252,6 +251,7 @@ a:hover                        { text-decoration:none; }
                 .section h2 {
                     margin-bottom: 30px;
                     font-size: 27px;
+                    font-weight: bold;
                     color: #212121;
                     text-transform: uppercase;
                 }
@@ -814,6 +814,8 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------SLIDER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrap-slider {
+    width: 100%;
+    overflow: hidden;
     margin-top: -35px;
 }
 .wrap-foto {
@@ -1000,6 +1002,10 @@ a:hover                        { text-decoration:none; }
     .list-contact {
         margin-bottom: 10px;
     }
+    .wrap-search {
+        float: none;
+        margin-bottom: 15px;
+    }
 }
 @media screen and (max-width: 1100px) {
     .wrap-footer .middle-box .wrap,
@@ -1017,12 +1023,6 @@ a:hover                        { text-decoration:none; }
     }
     .list-goods li {
         margin-left: 2%;
-    }
-}
-@media screen and (max-width: 1000px) {
-    .wrap-search {
-        float: none;
-        margin-bottom: 15px;
     }
 }
 @media screen and (max-width: 900px) {
@@ -1067,7 +1067,6 @@ a:hover                        { text-decoration:none; }
     .tbl-toggle li {
         display: block;
         float: none !important;
-        width: 300px;
     }
     .nav.nav-header {
         width: 100%;
@@ -1200,6 +1199,10 @@ a:hover                        { text-decoration:none; }
     }
 }
 @media screen and (max-width: 500px) {
+    .logo {
+        float: none;
+        display: block;
+    }
     .list-contact li {
         overflow: hidden;
         float: none;
@@ -1213,6 +1216,16 @@ a:hover                        { text-decoration:none; }
     .close-btn-popup {
         right: 0;
         top: -30px;
+    }
+    .wrap-header .top-box,
+    .wrap-header .middle-box {
+        text-align: center;
+    }
+    .wrap-header .top-box .content,
+    .wrap-header .middle-box .content {
+        display: inline-block;
+        width: auto;
+        text-align: left;
     }
 }
 @media screen and (max-width: 450px) {
