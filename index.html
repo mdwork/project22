@@ -85,8 +85,9 @@
             </nav>
         </div><!--end WRAP-HEADER-->
 
-        <div id="slider1_container">
-            <div u="slides" class="wrap-slides">
+        <!--Don't delete style attribute and tag style, it needs for correct work slider-->
+        <div id="slider1_container" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
                 <div>
                     <img src="images/red.jpg">
                 </div>
@@ -100,13 +101,25 @@
                 </div>
             </div>
 
-            <div u="navigator" class="navigation">
+            <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
                 <div u="prototype"></div>
             </div>
 
-            <span u="arrowleft" class="slide-triagle-left"></span>
-            <span u="arrowright" class="slide-triagle-right"></span>
-        </div><!--end SLIDER -->
+            <style type="text/css">
+                .jssora21l, .jssora21r {
+                    display: block;
+                    position: absolute;
+                    width: 55px;
+                    height: 55px;
+                    cursor: pointer;
+                    background: url(../img/a21.png) center center no-repeat;
+                    overflow: hidden;
+                }
+            </style>
+
+            <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;"></span>
+            <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;"></span>
+        </div>
 
         <div class="content wrap-content">
             <ul class="list-big-squares">
