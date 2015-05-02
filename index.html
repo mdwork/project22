@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jssor.js"></script>
-    <script src="js/jssor.slider.js"></script>
-    <script src="js/commonJs.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
@@ -85,47 +85,71 @@
             </nav>
         </div><!--end WRAP-HEADER-->
 
-        <!--Don't delete style attribute and tag style, it needs for correct work slider-->
-        <div class="wrap-slides">
-            <div id="slider1_container" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
-                <div u="slides" class="inner-slide" style="position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
-                    <div class="slide">
-                        <div class="wrap-foto"><img src="images/content/slide1.jpg"></div>
+        <div class="wrap-slider">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
-                        <div class="text">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="wrap">
+                            <div class="content">
+                                <div class="text">
+                                    <span class="header1">Легко настраиваемая тема</span>
+                                    <span class="header2">Быстро и просто.</span>
 
+                                    <span class="desc">Компания специализируется на оказании широкого спектра услуг как для
+                                        корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые
+                                        преимущества нашей компании.</span>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="wrap-foto"><img src="images/content/slide1.jpg" style="width:100%" data-src=""></div>
                     </div>
 
-                    <div class="slide">
-                        <div class="wrap-foto"><img src="images/content/slide2.jpg"></div>
+                    <div class="item">
+                        <div class="wrap">
+                            <div class="content">
+                                <div class="text">
+                                    <span class="header1">Легко настраиваемая тема</span>
+                                    <span class="header2">Быстро и просто.</span>
+
+                                    <span class="desc">Компания специализируется на оказании широкого спектра услуг как для
+                                        корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые
+                                        преимущества нашей компании.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap-foto"><img src="images/content/slide2.jpg" style="width:100%" data-src=""></div>
                     </div>
 
-                    <div class="slide">
-                        <div class="wrap-foto"><img src="images/content/slide3.jpg"></div>
+                    <div class="item">
+                        <div class="wrap">
+                            <div class="content">
+                                <div class="text">
+                                    <span class="header1">Легко настраиваемая тема</span>
+                                    <span class="header2">Быстро и просто.</span>
+
+                                    <span class="desc">Компания специализируется на оказании широкого спектра услуг как для
+                                        корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые
+                                        преимущества нашей компании.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap-foto"><img src="images/content/slide3.jpg" style="width:100%" data-src=""></div>
                     </div>
                 </div>
 
-                <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
-                    <div u="prototype"></div>
-                </div>
-
-                <style type="text/css">
-                    .jssora21l, .jssora21r {
-                        display: block;
-                        position: absolute;
-                        width: 55px;
-                        height: 55px;
-                        cursor: pointer;
-                        background: url(../img/a21.png) center center no-repeat;
-                        overflow: hidden;
-                    }
-                </style>
-
-                <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;"></span>
-                <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;"></span>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-        </div>
+        </div><!--end WRAP-SLIDER-->
 
         <div class="content wrap-content">
             <ul class="list-big-squares">
