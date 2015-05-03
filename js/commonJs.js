@@ -25,5 +25,4 @@ $(document).ready(function () {
     $('.wrap-form').click(function (e) {
         e.stopPropagation();
     });
-
 });

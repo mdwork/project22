@@ -151,7 +151,7 @@ a:hover                        { text-decoration:none; }
         .nav-header > ul > li > a:hover {
             text-decoration: underline;
         }
-        .nav-header > ul > li:hover .sub-menu {
+        .nav-header > ul > li:hover > .sub-menu {
             display: block;
         }
         .sub-menu {
@@ -163,6 +163,7 @@ a:hover                        { text-decoration:none; }
             background: #495061;
         }
             .sub-menu li {
+                position: relative;
                 display: block;
                 float: none;
                 padding: 11px 0 12px 30px;
@@ -170,6 +171,11 @@ a:hover                        { text-decoration:none; }
             }
             .sub-menu li:last-child {
                 border-bottom: none;
+            }
+            .sub-menu li:hover .sub-menu {
+                display: block;
+                top: 0;
+                left: 265px;
             }
                 .sub-menu a {
                     color: #fff;
@@ -179,6 +185,10 @@ a:hover                        { text-decoration:none; }
                 .sub-menu a:hover {
                     color: #fa8343;
                     text-decoration: underline;
+                }
+                .sub-menu .sub-menu {
+                    padding: 0;
+                    border: 1px solid #5B6472;
                 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
