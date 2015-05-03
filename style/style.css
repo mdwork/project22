@@ -215,16 +215,23 @@ a:hover                        { text-decoration:none; }
                 border-left: 35px solid transparent;
                 opacity: 0.2;
             }
-            .list-big-squares .wrap {
-                margin: 35px 35px 5px;
+            .list-big-squares a {
+                display: block;
+                height: 100%;
+                text-decoration: none;
             }
-                .list-big-squares .name {
+                .list-big-squares .wrap {
                     display: block;
-                    margin-bottom: 10px;
-                    font-size: 18px;
-                    font-weight: bold;
-                    text-transform: uppercase;
+                    margin: 35px 35px 5px;
+                    color: #fff;
                 }
+                    .list-big-squares .name {
+                        display: block;
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
     .wrap-list-service {
         padding-top: 70px;
         background: #F9F9F9;
