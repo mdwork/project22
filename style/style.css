@@ -549,7 +549,28 @@ a:hover                        { text-decoration:none; }
             }
     .list-services {
         overflow: hidden;
+        margin-bottom: 110px;
     }
+        .list-services li {
+            margin-bottom: 55px;
+        }
+            .img-service {
+                float: left;
+                margin-right: 30px;
+            }
+            .list-services .wrap {
+                overflow: hidden;
+            }
+                .list-services h2 {
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+                .list-services p {
+                    margin-bottom: 25px;
+                    color: #696f7c;
+                    line-height: 1.7;
+                }
 
 
 #animate-top {
@@ -650,6 +671,8 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrap-footer {
+    position: relative;
+    z-index: 11;
     margin-top: -251px;
 	background: #3F4553;
     color: #fff;
