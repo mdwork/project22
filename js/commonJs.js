@@ -31,4 +31,12 @@ $(document).ready(function () {
             scrollTop: 0
         }, 500)
     });
+
+    $('.side-bar > li').on('click', function(){
+        $this = $(this);
+
+        $this.children('.sub-menu-side-bar').slideToggle(500, function(){
+            $this.toggleClass('active');
+        });
+    });
 });

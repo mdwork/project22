@@ -512,6 +512,46 @@ a:hover                        { text-decoration:none; }
                     width: 100%;
                     max-width: 200px;
                 }
+    .wrap-header-page {
+        padding: 47px 0;
+        margin-bottom: 45px;
+        background: #f9f9f9;
+    }
+        .wrap-header-page h1 {
+            font-size: 40px;
+        }
+    .bread-curbs {
+        overflow: hidden;
+        margin-bottom: 45px;
+    }
+        .bread-curbs li {
+            float: left;
+            margin-left: 10px;
+        }
+        .bread-curbs li:first-child {
+            margin-left: 0;
+        }
+            .bread-curbs li:before {
+                content: "/";
+                float: left;
+                margin-right: 10px;
+                color: #979ba3;
+            }
+            .bread-curbs li:first-child:before {
+                display: none;
+            }
+            .bread-curbs a {
+                color: #ff6716;
+                font-size: 16px;
+            }
+            .bread-curbs span {
+                color: #979ba3;
+            }
+    .list-services {
+        overflow: hidden;
+    }
+
+
 #animate-top {
     display: block;
     position: absolute;
@@ -536,7 +576,76 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.side-bar {
+    float: left;
+    width: 300px;
+    margin: 0 70px 30px 0;
+}
+    .side-bar > li {
+        overflow: hidden;
+        background: #495061;
+        border-bottom: 1px solid #fff;
+        cursor: pointer;
+    }
+    .side-bar > .active {
+        background: #fa8343;
+    }
+        .side-bar span {
+            position: relative;
+            display: block;
+            margin: 15px 25px;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #fff;
+        }
+            .side-bar span:after {
+                content: '';
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 7px;
+                width: 7px;
+                height: 11px;
+                background: url("../images/content/triagle_active.png") no-repeat right bottom;
+            }
+            .side-bar > .active span:after {
+                content: '';
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 7px;
+                width: 11px;
+                height: 7px;
+                background: url("../images/content/triagle_active.png") no-repeat right top;
+            }
+        .sub-menu-side-bar {
+            display: none;
+            padding: 17px 20px 10px;
+            background: #fff;
+        }
+        .side-bar .active .sub-menu-side-bar {
+            display: block;
+        }
+            .sub-menu-side-bar li {
+                position: relative;
+                margin-bottom: 17px;
+            }
+                .sub-menu-side-bar li:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 7px;
+                    width: 7px;
+                    height: 11px;
+                    background: url("../images/content/triagle_active.png") no-repeat right bottom;
+                }
+                .sub-menu-side-bar a {
+                    display: block;
+                    font-size: 15px;
+                    color: #ff6716;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
