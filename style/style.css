@@ -762,10 +762,13 @@ a:hover                        { text-decoration:none; }
             .wrap-footer .btn {
                 color: #fff;
             }
-            .btn-more-info {
+            .btn-more-info,
+            a.btn-more-info {
                 display: inline-block;
                 height: auto;
                 padding: 13px 0;
+                text-decoration: none;
+                vertical-align: middle;
             }
     .wrap-footer .bottom-box,
     .wrap-header .top-box {
@@ -775,7 +778,7 @@ a:hover                        { text-decoration:none; }
     }
         .wrap-search {
             float: right;
-            width: 200px;
+            width: 170px;
             height: 35px;
             padding: 0 15px;
             background: #5C616F;
