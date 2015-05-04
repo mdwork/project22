@@ -25,4 +25,10 @@ $(document).ready(function () {
     $('.wrap-form').click(function (e) {
         e.stopPropagation();
     });
+
+    $('#animate-top').on('click', function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500)
+    });
 });

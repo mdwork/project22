@@ -41,9 +41,7 @@ a:hover                        { text-decoration:none; }
 .clearfix                      { display: inline-block; width: 100% }
 
 .content {
-    /*-moz-box-sizing: border-box;*/
-    /*-webkit-box-sizing: border-box;*/
-	/*box-sizing: border-box;*/
+    overflow: hidden;
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
@@ -52,6 +50,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrapper {
+    position: relative;
     min-height: 100%;
 }
 .wrapper:after {
@@ -513,6 +512,27 @@ a:hover                        { text-decoration:none; }
                     width: 100%;
                     max-width: 200px;
                 }
+#animate-top {
+    display: block;
+    position: absolute;
+    right: 30px;
+    width: 130px;
+    padding: 15px 0;
+    margin-top: -105px;
+    font-size: 13px;
+    font-weight: bold;
+    background: #FA8343;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+#animate-top:hover {
+    background: #495061;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
