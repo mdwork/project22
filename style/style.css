@@ -159,7 +159,7 @@ a:hover                        { text-decoration:none; }
             position: absolute;
             top: 70px;
             width: 265px;
-            padding: 15px 0;
+
             background: #495061;
         }
             .sub-menu li {
@@ -187,8 +187,8 @@ a:hover                        { text-decoration:none; }
                     text-decoration: underline;
                 }
                 .sub-menu .sub-menu {
-                    padding: 0;
                     border: 1px solid #5B6472;
+                    border-top: none;
                 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/

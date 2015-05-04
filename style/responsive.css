@@ -48,7 +48,7 @@
 @media screen and (max-width: 1300px) {
     .wrap-slider .content {
         max-width: 600px;
-        text-align: center;
+        margin-left: 70px;
     }
     .wrap-slider .text {
         width: 100%;
@@ -92,6 +92,10 @@
     }
 }
 @media screen and (max-width: 900px) {
+    .wrap-slider .content {
+        margin: 0 auto;
+        text-align: center;
+    }
     .wrap-advantages .list-marker {
         margin-right: 15px;
     }
