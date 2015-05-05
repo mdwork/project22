@@ -971,10 +971,53 @@ a:hover                        { text-decoration:none; }
                             margin-bottom: 25px;
                             color: #696f7c;
                         }
-            .big-desc-text {
-                display: block;
-                margin-bottom: 30px;
-                font-size: 18px;
+        .big-desc-text {
+            display: block;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        .pagination {
+            overflow: hidden;
+        }
+            .pagination li {
+                float: left;
+                width: 49px;
+                height: 49px;
+                line-height: 50px;
+                margin-right: 1px;
+                background: #EEEFF0 no-repeat center;
+                cursor: pointer;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 600;
+                border: 1px solid #EEEFF0;
+                color: #90949c;
+            }
+            .pagination li.active,
+            .pagination li.active:hover {
+                background: #E6E6E6;
+                border-color: #E6E6E6;
+            }
+            .pagination li:hover {
+                border-color: #ccc;
+                background: #fff no-repeat center;
+            }
+            .pagination .next {
+                background-image: url("../images/content/pagination_next.png");
+            }
+            .pagination .prev {
+                background-image: url("../images/content/pagination_prev.png");
+            }
+            .pagination .next:hover,
+            .pagination .prev:hover {
+                background-color: #FA8343;
+                border-color: #FA8343;
+            }
+            .pagination .next:hover {
+                background-image: url("../images/content/pagination_next_hover.png");
+            }
+            .pagination .prev:hover {
+                background-image: url("../images/content/pagination_prev_hover.png");
             }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
