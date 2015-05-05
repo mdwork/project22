@@ -1045,47 +1045,6 @@ a:hover                        { text-decoration:none; }
                     width: 65%;
                     padding-left: 40px;
                 }
-    .callback-box {
-        margin-bottom: 80px;
-    }
-        .callback-box .left-block {
-            float: left;
-            width: 320px;
-            margin-right: 50px;
-        }
-            .callback-box .left-block li {
-                display: table;
-                width: 100%;
-                min-height: 70px;
-                margin-bottom: 40px;
-                background: url("../images/content/icon_contact1.png") no-repeat left center;
-            }
-            .callback-box .left-block .email-block {
-                background-image: url("../images/content/icon_contact2.png");
-            }
-            .callback-box .left-block .address-block {
-                background-image: url("../images/content/icon_contact3.png");
-            }
-            .callback-box .left-block .schedule-block {
-                background-image: url("../images/content/icon_contact4.png");
-            }
-                .callback-box .left-block li .wrap {
-                    display: table-cell;
-                    padding-left: 100px;
-                    vertical-align: middle;
-                }
-                    .callback-box .left-block .top {
-                        display: block;
-                        color: #f36b21;
-                        font-size: 12px;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                    }
-                    .callback-box .left-block .tell {
-                        font-size: 20px;
-                        font-weight: 600;
-                        color: #353b3e;
-                    }
 
 #animate-top {
     display: block;
@@ -1239,22 +1198,19 @@ a:hover                        { text-decoration:none; }
         .contact-box {
             float: right;
         }
-            .wrap-footer .tell,
-            .wrap-header .tell {
+            .tell {
                 float: left;
                 padding: 3px 0 4px 45px;
                 margin-top: 4px;
                 background: url("../images/header/tell_icon.png") left center no-repeat;
             }
-                .wrap-footer .tell a,
-                .wrap-header .tell a {
+                .tell a {
                     margin-right: 13px;
                     font-size: 24px;
                     font-weight: 600;
                     text-decoration: none;
                 }
-                    .wrap-footer .tell span,
-                    .wrap-header .tell span {
+                    .tell span {
                         font-weight: 700;
                     }
             .btn,

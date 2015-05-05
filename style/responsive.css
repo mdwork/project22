@@ -79,7 +79,8 @@
         overflow: hidden;
         margin-bottom: 10px;
     }
-    .tell {
+    .wrap-footer .tell,
+    .wrap-header .tell {
         display: block;
         float: none;
         margin-bottom: 10px;
