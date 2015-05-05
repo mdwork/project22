@@ -517,7 +517,8 @@ a:hover                        { text-decoration:none; }
         margin-bottom: 45px;
         background: #f9f9f9;
     }
-        .wrap-header-page h1 {
+        .wrap-header-page h1,
+        .wrap-header-page h2 {
             font-size: 40px;
         }
     .bread-curbs {
@@ -734,6 +735,316 @@ a:hover                        { text-decoration:none; }
                 line-height: 1.7;
                 margin-bottom: 25px;
             }
+    .header-name-googs {
+        margin: -10px 0 40px;
+        font-size: 29px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .wrap-select {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 30px;
+        border: 1px solid #CCD1D7;
+    }
+        .wrap-select:after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 10;
+            right: 0;
+            top: 0;
+            width: 41px;
+            height: 49px;
+            background: url("../images/content/select_icon.jpg") no-repeat;
+            pointer-events: none;
+        }
+        .wrap-select select {
+            width: 260px;
+            padding: 15px;
+            border: none;
+        }
+    .catalog-goods {
+
+    }
+        .catalog-goods li {
+            display: inline-table;
+            width: 47%;
+            margin-bottom: 40px;
+            border: 1px solid #E0E0E0;
+        }
+        .catalog-goods li:nth-child(2n + 1) {
+            margin-right: 4.8%;
+            margin-left: 1px;
+        }
+        .catalog-goods li:hover {
+            border-color: #FA8343;
+            outline: 1px solid #FA8343;
+        }
+            .catalog-goods .wrap {
+                margin: 8%;
+            }
+                .catalog-goods .name-goods {
+                    display: block;
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                .sale {
+                    position: relative;
+                    display: block;
+                    width: 135px;
+                    line-height: 30px;
+                    height: 30px;
+                    color: #fff;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                }
+                .active.sale {
+                    background: #FA8343;
+                }
+                    .active.sale:after,
+                    .sale span:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: -10px;
+                        top: 0;
+                        width: 0;
+                        height: 0;
+                        border-top: 30px solid #FA8343;
+                        border-right: 10px solid transparent;
+                    }
+                        .sale span {
+                            position: relative;
+                            float: left;
+                            padding: 0 13px;
+                            margin-right: 13px;
+                            background: #495061;
+                        }
+                            .sale span:after {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                right: -10px;
+                                top: 0;
+                                width: 0;
+                                height: 0;
+                                border-top: 30px solid #495061;
+                                border-right: 10px solid transparent;
+                            }
+        .block-good {
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+                .catalog-goods .wrap-foto,
+                .view-good .wrap-foto {
+                    display: table;
+                    width: 100%;
+                    height: 215px;
+                    text-align: center;
+                }
+                .view-good .wrap-foto {
+                    position: relative;
+                    height: 265px;
+                }
+                    .catalog-goods .wrap-foto span,
+                    .view-good .wrap-foto .foto {
+                        display: table-cell;
+                        width: 100%;
+                        vertical-align: middle;
+                    }
+                .old-price {
+                    display: block;
+                }
+                    .old-price .text {
+                        font-size: 12px;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        color: #b8bcc4;
+                        text-transform: uppercase;
+                    }
+                    .old-price .number {
+                        font-size: 25px;
+                        font-weight: 600;
+                        text-decoration: line-through;
+                        color: #a1a4a9;
+                    }
+                .price {
+                    display: block;
+                    margin-bottom: 15px;
+                    font-weight: bold;
+                    font-size: 35px;
+                    color: #fa8343;
+                }
+                    .price:before {
+                        content: 'цена:';
+                        display: inline-block;
+                        margin-right: 15px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        color: #b8bcc4;
+                        text-transform: uppercase;
+                    }
+            .catalog-goods .desc {
+                display: block;
+                margin-bottom: 25px;
+                color: #696f7c;
+            }
+            .big-desc-text {
+                display: block;
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+    .pagination {
+        overflow: hidden;
+    }
+        .pagination li {
+            float: left;
+            width: 49px;
+            height: 49px;
+            line-height: 50px;
+            margin-right: 1px;
+            background: #EEEFF0 no-repeat center;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid #EEEFF0;
+            color: #90949c;
+        }
+        .pagination li.active,
+        .pagination li.active:hover {
+            background: #E6E6E6;
+            border-color: #E6E6E6;
+        }
+        .pagination li:hover {
+            border-color: #ccc;
+            background: #fff no-repeat center;
+        }
+            .pagination .next {
+                background-image: url("../images/content/pagination_next.png");
+            }
+            .pagination .prev {
+                background-image: url("../images/content/pagination_prev.png");
+            }
+            .pagination .next:hover,
+            .pagination .prev:hover {
+                background-color: #FA8343;
+                border-color: #FA8343;
+            }
+            .pagination .next:hover {
+                background-image: url("../images/content/pagination_next_hover.png");
+            }
+            .pagination .prev:hover {
+                background-image: url("../images/content/pagination_prev_hover.png");
+            }
+    .view-good {
+        float: left;
+        width: 330px;
+        margin-right: 40px;
+    }
+        .view-good .btn-increase {
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+            display: block;
+            width: 32px;
+            height: 32px;
+            background: url("../images/content/btn_increase.jpg") no-repeat;
+        }
+        .view-good .wrap-foto {
+            margin-bottom: 50px;
+        }
+        .slider-good {
+            overflow: hidden;
+        }
+            .slider-good li {
+                float: left;
+                display: table;
+                width: 95px;
+                height: 95px;
+                margin-right: 17px;
+                border: 1px solid #C2C2C2;
+                text-align: center;
+                cursor: pointer;
+            }
+            .slider-good li:last-child {
+                margin-right: 0;
+            }
+            .slider-good .active {
+                border: 1px solid #FA8343;
+            }
+                .slider-good span {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+        .desc-good {
+            overflow: hidden;
+        }
+            .tbl-charac {
+                width: 200px;
+                margin-bottom: 15px;
+            }
+                .tbl-charac td {
+                    width: 50%;
+                    padding-bottom: 9px;
+                    font-size: 14px;
+                }
+                .tbl-charac td:first-child {
+                    color: #b9bdc5;
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+        .desc-good .btn {
+            color: #fff;
+        }
+        .desc-good .btn:hover,
+        .desc-good a.btn:hover {
+            color: #FA8343;
+        }
+    .toggle-tab {
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+    }
+        .toggle-tab li {
+            float: left;
+            padding: 15px 35px;
+            font-size: 18px;
+            cursor: pointer;
+            border: 1px solid #fff;
+            border-bottom-color: #ccc;
+        }
+        .toggle-tab .active {
+            border: 1px solid #ccc;
+            border-bottom-color: #fff;
+        }
+    .block-tab {
+        margin: -1px 0 25px;
+        padding: 28px 0 8px;
+        border: 1px solid #ccc;
+        font-size: 18px;
+    }
+        .block-tab li {
+            display: none;
+        }
+        .block-tab .active {
+            display: block;
+        }
+            .block-tab table {
+                width: 100%;
+            }
+                .block-tab td {
+                    padding-bottom: 28px;
+                }
+                .block-tab td:first-child {
+                    width: 65%;
+                    padding-left: 40px;
+                }
 
 #animate-top {
     display: block;
@@ -829,196 +1140,6 @@ a:hover                        { text-decoration:none; }
                     font-size: 15px;
                     color: #ff6716;
                 }
-            .wrap-select {
-                position: relative;
-                display: inline-block;
-                margin-bottom: 30px;
-                border: 1px solid #CCD1D7;
-            }
-                .wrap-select:after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    z-index: 10;
-                    right: 0;
-                    top: 0;
-                    width: 41px;
-                    height: 49px;
-                    background: url("../images/content/select_icon.jpg") no-repeat;
-                    pointer-events: none;
-                }
-                .wrap-select select {
-                    width: 260px;
-                    padding: 15px;
-                    border: none;
-                }
-            .catalog-goods {
-
-            }
-                .catalog-goods li {
-                    display: inline-table;
-                    width: 47%;
-                    margin-bottom: 40px;
-                    border: 1px solid #E0E0E0;
-                }
-                .catalog-goods li:nth-child(2n + 1) {
-                    margin-right: 4.8%;
-                    margin-left: 1px;
-                }
-                .catalog-goods li:hover {
-                    border-color: #FA8343;
-                    outline: 1px solid #FA8343;
-                }
-                    .catalog-goods .wrap {
-                        margin: 8%;
-                    }
-                        .catalog-goods .name-goods {
-                            display: block;
-                            margin-bottom: 15px;
-                            font-size: 20px;
-                            text-transform: uppercase;
-                            font-weight: bold;
-                        }
-                        .catalog-goods .sale {
-                            position: relative;
-                            display: block;
-                            width: 135px;
-                            line-height: 30px;
-                            height: 30px;
-                            color: #fff;
-                            font-weight: 600;
-                            letter-spacing: 2px;
-                        }
-                        .catalog-goods .active.sale {
-                            background: #FA8343;
-                        }
-                        .catalog-goods .active.sale:after,
-                        .catalog-goods .sale span:after {
-                            content: '';
-                            display: block;
-                            position: absolute;
-                            right: -10px;
-                            top: 0;
-                            width: 0;
-                            height: 0;
-                            border-top: 30px solid #FA8343;
-                            border-right: 10px solid transparent;
-                        }
-                            .catalog-goods .sale span {
-                                position: relative;
-                                float: left;
-                                padding: 0 13px;
-                                margin-right: 13px;
-                                background: #495061;
-                            }
-                                .catalog-goods .sale span:after {
-                                    content: '';
-                                    display: block;
-                                    position: absolute;
-                                    right: -10px;
-                                    top: 0;
-                                    width: 0;
-                                    height: 0;
-                                    border-top: 30px solid #495061;
-                                    border-right: 10px solid transparent;
-                                }
-                        .catalog-goods .wrap-foto {
-                            display: table;
-                            width: 100%;
-                            height: 215px;
-                            text-align: center;
-                        }
-                            .catalog-goods .wrap-foto span {
-                                display: table-cell;
-                                width: 100%;
-                                vertical-align: middle;
-                            }
-                        .old-price {
-                            display: block;
-                        }
-                            .old-price .text {
-                                font-size: 12px;
-                                font-weight: bold;
-                                letter-spacing: 1px;
-                                color: #b8bcc4;
-                                text-transform: uppercase;
-                            }
-                            .old-price .number {
-                                font-size: 25px;
-                                font-weight: 600;
-                                text-decoration: line-through;
-                                color: #a1a4a9;
-                            }
-                        .price {
-                            display: block;
-                            margin-bottom: 15px;
-                            font-weight: bold;
-                            font-size: 35px;
-                            color: #fa8343;
-                        }
-                            .price:before {
-                                content: 'цена:';
-                                display: inline-block;
-                                margin-right: 15px;
-                                font-size: 12px;
-                                font-weight: bold;
-                                letter-spacing: 1px;
-                                color: #b8bcc4;
-                                text-transform: uppercase;
-                            }
-                        .catalog-goods .desc {
-                            display: block;
-                            margin-bottom: 25px;
-                            color: #696f7c;
-                        }
-        .big-desc-text {
-            display: block;
-            margin-bottom: 30px;
-            font-size: 18px;
-        }
-        .pagination {
-            overflow: hidden;
-        }
-            .pagination li {
-                float: left;
-                width: 49px;
-                height: 49px;
-                line-height: 50px;
-                margin-right: 1px;
-                background: #EEEFF0 no-repeat center;
-                cursor: pointer;
-                text-align: center;
-                font-size: 16px;
-                font-weight: 600;
-                border: 1px solid #EEEFF0;
-                color: #90949c;
-            }
-            .pagination li.active,
-            .pagination li.active:hover {
-                background: #E6E6E6;
-                border-color: #E6E6E6;
-            }
-            .pagination li:hover {
-                border-color: #ccc;
-                background: #fff no-repeat center;
-            }
-            .pagination .next {
-                background-image: url("../images/content/pagination_next.png");
-            }
-            .pagination .prev {
-                background-image: url("../images/content/pagination_prev.png");
-            }
-            .pagination .next:hover,
-            .pagination .prev:hover {
-                background-color: #FA8343;
-                border-color: #FA8343;
-            }
-            .pagination .next:hover {
-                background-image: url("../images/content/pagination_next_hover.png");
-            }
-            .pagination .prev:hover {
-                background-image: url("../images/content/pagination_prev_hover.png");
-            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1606,11 +1727,13 @@ a:hover                        { text-decoration:none; }
     color: #fff;
     border-radius: 0;
 }
-.list-btns-slider li:first-child .btn {
+.list-btns-slider li:first-child .btn,
+.desc-good .btn {
     background: #FA8343;
     border-color: #FA8343;
 }
-.list-btns-slider li .btn:hover {
+.list-btns-slider li .btn:hover,
+.desc-good .btn:hover {
     background: #fff;
     color: #495061;
 }

@@ -44,4 +44,12 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $(this).parent().children('p').slideToggle();
     });
+
+    $('.toggle-tab li').on('click', function(){
+    	$(this).parent().children('li').removeClass('active');
+        $('.block-tab li').removeClass('active');
+
+        $(this).addClass('active');
+        $('.block-tab li').eq($(this).index()).addClass('active');
+    });
 });
