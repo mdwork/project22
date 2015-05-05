@@ -305,6 +305,11 @@
         width: auto;
         text-align: left;
     }
+    .list-projects .btn,
+    .list-projects a.btn {
+        width: 100%;
+        max-width: 196px;
+    }
 }
 @media screen and (max-width: 450px) {
     .list-service li {

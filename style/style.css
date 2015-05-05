@@ -829,6 +829,153 @@ a:hover                        { text-decoration:none; }
                     font-size: 15px;
                     color: #ff6716;
                 }
+            .wrap-select {
+                position: relative;
+                display: inline-block;
+                margin-bottom: 30px;
+                border: 1px solid #CCD1D7;
+            }
+                .wrap-select:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    z-index: 10;
+                    right: 0;
+                    top: 0;
+                    width: 41px;
+                    height: 49px;
+                    background: url("../images/content/select_icon.jpg") no-repeat;
+                    pointer-events: none;
+                }
+                .wrap-select select {
+                    width: 260px;
+                    padding: 15px;
+                    border: none;
+                }
+            .catalog-goods {
+
+            }
+                .catalog-goods li {
+                    display: inline-table;
+                    width: 47%;
+                    margin-bottom: 40px;
+                    border: 1px solid #E0E0E0;
+                }
+                .catalog-goods li:nth-child(2n + 1) {
+                    margin-right: 4.8%;
+                    margin-left: 1px;
+                }
+                .catalog-goods li:hover {
+                    border-color: #FA8343;
+                    outline: 1px solid #FA8343;
+                }
+                    .catalog-goods .wrap {
+                        margin: 8%;
+                    }
+                        .catalog-goods .name-goods {
+                            display: block;
+                            margin-bottom: 15px;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                        }
+                        .catalog-goods .sale {
+                            position: relative;
+                            display: block;
+                            width: 135px;
+                            line-height: 30px;
+                            height: 30px;
+                            color: #fff;
+                            font-weight: 600;
+                            letter-spacing: 2px;
+                        }
+                        .catalog-goods .active.sale {
+                            background: #FA8343;
+                        }
+                        .catalog-goods .active.sale:after,
+                        .catalog-goods .sale span:after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            right: -10px;
+                            top: 0;
+                            width: 0;
+                            height: 0;
+                            border-top: 30px solid #FA8343;
+                            border-right: 10px solid transparent;
+                        }
+                            .catalog-goods .sale span {
+                                position: relative;
+                                float: left;
+                                padding: 0 13px;
+                                margin-right: 13px;
+                                background: #495061;
+                            }
+                                .catalog-goods .sale span:after {
+                                    content: '';
+                                    display: block;
+                                    position: absolute;
+                                    right: -10px;
+                                    top: 0;
+                                    width: 0;
+                                    height: 0;
+                                    border-top: 30px solid #495061;
+                                    border-right: 10px solid transparent;
+                                }
+                        .catalog-goods .wrap-foto {
+                            display: table;
+                            width: 100%;
+                            height: 215px;
+                            text-align: center;
+                        }
+                            .catalog-goods .wrap-foto span {
+                                display: table-cell;
+                                width: 100%;
+                                vertical-align: middle;
+                            }
+                        .old-price {
+                            display: block;
+                        }
+                            .old-price .text {
+                                font-size: 12px;
+                                font-weight: bold;
+                                letter-spacing: 1px;
+                                color: #b8bcc4;
+                                text-transform: uppercase;
+                            }
+                            .old-price .number {
+                                font-size: 25px;
+                                font-weight: 600;
+                                text-decoration: line-through;
+                                color: #a1a4a9;
+                            }
+                        .price {
+                            display: block;
+                            margin-bottom: 15px;
+                            font-weight: bold;
+                            font-size: 35px;
+                            color: #fa8343;
+                        }
+                            .price:before {
+                                content: 'цена:';
+                                display: inline-block;
+                                margin-right: 15px;
+                                font-size: 12px;
+                                font-weight: bold;
+                                letter-spacing: 1px;
+                                color: #b8bcc4;
+                                text-transform: uppercase;
+                            }
+                        .catalog-goods .desc {
+                            display: block;
+                            margin-bottom: 25px;
+                            color: #696f7c;
+                        }
+            .big-desc-text {
+                display: block;
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -904,8 +1051,7 @@ a:hover                        { text-decoration:none; }
                     }
             .btn,
             a.btn {
-                width: 100%;
-                max-width: 196px;
+                width: 196px;
                 height: 50px;
                 color: #FA8343;
                 border: 2px solid #FA8343;
