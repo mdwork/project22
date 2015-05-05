@@ -92,6 +92,14 @@
     }
 }
 @media screen and (max-width: 900px) {
+    .inner-content {
+        margin-bottom: 120px;
+    }
+    .side-bar {
+        width: auto;
+        float: none;
+        margin-right: 0;
+    }
     .wrap-slider .content {
         margin: 0 auto;
         text-align: center;
@@ -333,5 +341,9 @@
     .popup-box {
         width: 300px;
         margin-left: -150px;
+    }
+    .img-service {
+        float: none;
+        margin-bottom: 20px;
     }
 }
