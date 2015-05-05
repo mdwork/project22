@@ -770,6 +770,7 @@ a:hover                        { text-decoration:none; }
         .catalog-goods li {
             display: inline-table;
             width: 47%;
+            max-width: 378px;
             margin-bottom: 40px;
             border: 1px solid #E0E0E0;
         }
@@ -1183,7 +1184,7 @@ a:hover                        { text-decoration:none; }
                     background: #fff;
                 }
     .wrap-details {
-        padding-bottom: 55px;
+        padding: 50px 0 55px;
         background: #F9F9F9;
     }
         .header-details {

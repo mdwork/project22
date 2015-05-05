@@ -72,8 +72,17 @@
         float: none;
         margin-bottom: 15px;
     }
+    .catalog-goods li:nth-child(2n + 1) {
+        margin-right: 4.5%;
+    }
 }
 @media screen and (max-width: 1100px) {
+    .old-price .number {
+        font-size: 22px;
+    }
+    .price {
+        font-size: 28px;
+    }
     .wrap-footer .middle-box .wrap,
     .wrap-header .middle-box .wrap {
         overflow: hidden;
@@ -90,6 +99,16 @@
     }
     .list-goods li {
         margin-left: 2%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .price:before,
+    .old-price .text {
+        display: block;
+    }
+    .catalog-goods li {
+        width: auto;
+        margin: 0 0 40px 0;
     }
 }
 @media screen and (max-width: 900px) {
@@ -181,6 +200,14 @@
     }
     .list-big-squares .desc {
         font-size: 13px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .catalog-goods {
+        text-align: center;
+    }
+    .catalog-goods .wrap {
+        text-align: left;
     }
 }
 @media screen and (max-width: 750px) {
@@ -313,6 +340,11 @@
     }
 }
 @media screen and (max-width: 450px) {
+    .pagination li {
+        width: 38px;
+        height: 38px;
+        line-height: 39px;
+    }
     .list-service li {
         width: 100%;
         max-width: 350px;
