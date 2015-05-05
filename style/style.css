@@ -571,7 +571,140 @@ a:hover                        { text-decoration:none; }
                     color: #696f7c;
                     line-height: 1.7;
                 }
+    .inner-content {
+        overflow: hidden;
+        margin-bottom: 95px;
+    }
+        .list-questions {
+            overflow: hidden;
+            margin-bottom: 25px;
+        }
+            .list-questions li {
+                margin-bottom: 20px;
+            }
+                .list-questions .question-js {
+                    position: relative;
+                    padding: 17px 25px;
+                    margin-bottom: 20px;
+                    font-size: 21px;
+                    color: #ff6716;
+                    border: 1px solid #d3d9e3;
+                    cursor: pointer;
+                }
+                .list-questions .question-js:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: 25px;
+                    top: 30px;
+                    width: 16px;
+                    height: 10px;
+                    background: url("../images/content/triagle_question.png") no-repeat bottom;
 
+                }
+                .list-questions .question-js.active:after {
+                    background-position: top;
+                }
+                .list-questions .question-js:hover {
+                    border-color: #ff6716;
+                }
+                    .question-js span {
+                        border-bottom: 1px dashed #ff6716;
+                    }
+                .list-questions li p {
+                    display: none;
+                    position: relative;
+                    padding: 30px;
+                    background: #495061;
+                    color: #fff;
+                    font-size: 18px;
+                    line-height: 1.7;
+                }
+                .list-questions li p:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: -10px;
+                    left: 30px;
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid #495061;
+                }
+        .form-question {
+            overflow: hidden;
+        }
+            .form-question legend {
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            .form-question .wrap-input {
+                overflow: hidden;
+                margin-bottom: 30px;
+            }
+                .form-question .wrap-input label {
+                    position: relative;
+                    float: left;
+                    width: 48%;
+                    padding: 12px 15px;
+                    border: 1px solid #ccc;
+
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing:border-box;
+                    box-sizing:border-box;
+                }
+                    .form-question .wrap-input label:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 12px;
+                        right: 15px;
+                        width: 17px;
+                        height: 17px;
+                        background: url("../images/sprite_form.png") no-repeat;
+                    }
+                    .form-question .wrap-input .tell-input:after {
+                        background-position: bottom;
+                    }
+                    .form-question .wrap-input input {
+                        width: 100%;
+                        font-size: 12px;
+                        border: none;
+                    }
+                    .form-question .wrap-input input:focus {
+                        border-color: #acacac;
+                    }
+                .form-question .wrap-input .tell-input {
+                    float: right;
+                }
+            .form-question textarea {
+                display: block;
+                padding: 15px;
+                margin-bottom: 30px;
+                width: 100%;
+                height: 200px;
+                border: 1px solid #ccc;
+                font-size: 12px;
+                text-transform: uppercase;
+                resize: none;
+
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                box-sizing:border-box;
+            }
+            .form-question .btn {
+                width: 300px;
+                padding: 19px 0;
+                font-size: 15px;
+                color: #fff;
+                background: #FA8343;
+            }
+            .form-question .btn:hover {
+                color: #FA8343;
+                background: #fff;
+            }
 
 #animate-top {
     display: block;

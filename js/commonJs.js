@@ -39,4 +39,9 @@ $(document).ready(function () {
             $this.toggleClass('active');
         });
     });
+
+    $('.question-js').on('click', function(){
+        $(this).toggleClass('active');
+        $(this).parent().children('p').slideToggle();
+    });
 });
