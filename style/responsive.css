@@ -346,4 +346,10 @@
         float: none;
         margin-bottom: 20px;
     }
+    .list-projects li {
+        width: 100%;
+    }
+    .list-projects li:nth-child(2n + 1) {
+        margin-right: 0;
+    }
 }
