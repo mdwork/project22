@@ -58,6 +58,9 @@
     }
 }
 @media screen and (max-width: 1200px) {
+    .callback-box .left-block {
+        margin-right: 20px;
+    }
     .content {
         width: 99%;
     }
@@ -102,6 +105,9 @@
     }
 }
 @media screen and (max-width: 980px) {
+    .wrap-details {
+        padding-bottom: 100px;
+    }
     .slider-good li {
         margin-right: 14px;
     }
@@ -119,6 +125,14 @@
     }
 }
 @media screen and (max-width: 900px) {
+    .callback-box .left-block {
+        float: none;
+        width: auto;
+    }
+    .callback-box .left-block li {
+        display: inline-table;
+        width: 47%;
+    }
     .inner-content {
         margin-bottom: 120px;
     }
@@ -246,6 +260,9 @@
     }
 }
 @media screen and (max-width: 650px) {
+    .callback-box .left-block li {
+        width: 100%;
+    }
     .view-good {
         float: none;
         margin-bottom: 30px;
@@ -280,6 +297,18 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .tbl-details td,
+    .tbl-details td:first-child {
+        font-size: 14px;
+    }
+    .map span {
+        left: 46%;
+    }
+    .form-contact ul {
+        float: none;
+        width: auto;
+        margin-right: 0;
+    }
     .list-big-squares {
         text-align: center;
     }
@@ -367,8 +396,16 @@
         width: 100%;
         max-width: 196px;
     }
+    .map span {
+        left: 48%;
+    }
 }
 @media screen and (max-width: 450px) {
+    .form-contact .btn {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
     .toggle-tab li {
         font-size: 13px;
     }
@@ -396,6 +433,15 @@
     }
 }
 @media screen and (max-width: 420px) {
+    .callback-box .left-block li .wrap {
+        padding-left: 85px;
+    }
+    .tbl-details td {
+        font-size: 13px;
+    }
+    .map span {
+        left: 50%;
+    }
     .toggle-tab li {
         font-size: 11px;
     }
@@ -434,5 +480,10 @@
     }
     .list-projects li:nth-child(2n + 1) {
         margin-right: 0;
+    }
+}
+@media screen and (max-width: 350px) {
+    .map span {
+        left: 51%;
     }
 }
