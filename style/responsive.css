@@ -102,6 +102,13 @@
     }
 }
 @media screen and (max-width: 980px) {
+    .slider-good li {
+        margin-right: 14px;
+    }
+    .view-good {
+        width: 320px;
+        margin-right: 10px;
+    }
     .price:before,
     .old-price .text {
         display: block;
@@ -239,6 +246,10 @@
     }
 }
 @media screen and (max-width: 650px) {
+    .view-good {
+        float: none;
+        margin-bottom: 30px;
+    }
     .list-goods li {
         width: 45%;
     }
@@ -304,7 +315,25 @@
         width: 98%;
     }
 }
+@media screen and (max-width: 550px) {
+    .toggle-tab li {
+        width: 33%;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 15px;
+
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
 @media screen and (max-width: 500px) {
+    .block-tab {
+        font-size: 15px;
+    }
+    .block-tab td:first-child {
+        padding-left: 20px;
+    }
     .logo {
         float: none;
         display: block;
@@ -340,6 +369,9 @@
     }
 }
 @media screen and (max-width: 450px) {
+    .toggle-tab li {
+        font-size: 13px;
+    }
     .pagination li {
         width: 38px;
         height: 38px;
@@ -364,6 +396,19 @@
     }
 }
 @media screen and (max-width: 420px) {
+    .toggle-tab li {
+        font-size: 11px;
+    }
+    .view-good .wrap-foto .foto img {
+        max-width: 90%;
+    }
+    .view-good {
+        width: 305px;
+    }
+    .slider-good li {
+        width: 90px;
+        height: 90px;
+    }
     .wrap-slider .header1,
     .wrap-slider .header2 {
         font-size: 26px;
