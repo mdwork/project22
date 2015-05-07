@@ -52,4 +52,6 @@ $(document).ready(function () {
         $(this).addClass('active');
         $('.block-tab li').eq($(this).index()).addClass('active');
     });
+
+    $(".fancybox").fancybox();
 });

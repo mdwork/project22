@@ -991,7 +991,7 @@ a:hover                        { text-decoration:none; }
             .slider-good .active {
                 border: 1px solid #FA8343;
             }
-                .slider-good span {
+                .slider-good a {
                     display: table-cell;
                     vertical-align: middle;
                 }
