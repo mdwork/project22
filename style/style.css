@@ -10,7 +10,7 @@ div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,
 	list-style:none;
 }
 button                         { cursor: pointer; }
-select, input, textarea        { font-size:15px; vertical-align:middle; }
+select, input, textarea        { font-size:15px; vertical-align:middle; font:15px 'Open Sans';}
 textarea                       { vertical-align:top; }
 :focus                         { outline:none; }
 input[type=submit]             { cursor:pointer; }
@@ -562,11 +562,14 @@ a:hover                        { text-decoration:none; }
             .list-services .wrap {
                 overflow: hidden;
             }
-                .list-services h2 {
-                    margin-bottom: 10px;
-                    font-size: 20px;
-                    text-transform: uppercase;
+                .list-services a {
+                    text-decoration: none;
                 }
+                    .list-services h2 {
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                    }
                 .list-services p {
                     margin-bottom: 25px;
                     color: #696f7c;
@@ -665,11 +668,11 @@ a:hover                        { text-decoration:none; }
                         top: 12px;
                         right: 15px;
                         width: 17px;
-                        height: 17px;
-                        background: url("../images/sprite_form.png") no-repeat;
+                        height: 18px;
+                        background: url("../images/name_form.png") no-repeat;
                     }
                     .form-question .wrap-input .tell-input:after {
-                        background-position: bottom;
+                        background: url("../images/sprite_form.png") no-repeat;
                     }
                     .form-question .wrap-input input {
                         width: 100%;
@@ -681,6 +684,7 @@ a:hover                        { text-decoration:none; }
                     }
                 .form-question .wrap-input .tell-input {
                     float: right;
+                    font-size: 14px;
                 }
             .form-question textarea {
                 display: block;
@@ -727,9 +731,13 @@ a:hover                        { text-decoration:none; }
             }
             .list-projects li h2 {
                 margin-bottom: 20px;
-                font-size: 20px;
-                text-transform: uppercase;
             }
+                .list-projects li h2 a {
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
             .list-projects p {
                 color: #696f7c;
                 line-height: 1.7;
@@ -744,6 +752,7 @@ a:hover                        { text-decoration:none; }
     .wrap-select {
         position: relative;
         display: inline-block;
+        height: 50px;
         margin-bottom: 30px;
         border: 1px solid #CCD1D7;
     }
@@ -755,8 +764,9 @@ a:hover                        { text-decoration:none; }
             right: 0;
             top: 0;
             width: 41px;
-            height: 49px;
+            height: 50px;
             background: url("../images/content/select_icon.jpg") no-repeat;
+            background-size: 100% 100%;
             pointer-events: none;
         }
         .wrap-select select {
@@ -788,10 +798,13 @@ a:hover                        { text-decoration:none; }
                 .catalog-goods .name-goods {
                     display: block;
                     margin-bottom: 15px;
-                    font-size: 20px;
-                    text-transform: uppercase;
-                    font-weight: bold;
                 }
+                    .catalog-goods .name-goods a {
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
                 .sale {
                     position: relative;
                     display: block;
@@ -1026,7 +1039,7 @@ a:hover                        { text-decoration:none; }
         }
     .block-tab {
         margin: -1px 0 25px;
-        padding: 28px 0 8px;
+        padding: 15px 0 8px;
         border: 1px solid #ccc;
         font-size: 18px;
     }
@@ -1036,16 +1049,44 @@ a:hover                        { text-decoration:none; }
         .block-tab .active {
             display: block;
         }
+        .block-tab .view-form {
+            padding: 0 35px 25px;
+        }
+            .view-form .header-comment,
+            .view-form .info-user,
+            .view-form p {
+                display: block;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            .view-form .header-comment {
+                margin-top: 15px;
+            }
+            .view-form p {
+                line-height: 1.6;
+                margin-bottom: 25px;
+            }
+            .view-form .info-user {
+                margin-bottom: 45px;
+                color: #b9bdc5;
+            }
             .block-tab table {
                 width: 100%;
             }
+                .block-tab tr:nth-child(2n) {
+                    background: #f9f9f9;
+                }
                 .block-tab td {
-                    padding-bottom: 28px;
+                    padding: 14px 0 14px;
                 }
                 .block-tab td:first-child {
                     width: 65%;
                     padding-left: 40px;
                 }
+            .block-tab .form-question legend {
+                font-size: 25px;
+                font-weight: 600;
+            }
 
         .callback-box .left-block {
             float: left;
@@ -1055,7 +1096,7 @@ a:hover                        { text-decoration:none; }
             .callback-box .left-block li {
                 display: table;
                 width: 100%;
-                min-height: 70px;
+                height: 70px;
                 margin-bottom: 40px;
                 background: url("../images/content/icon_contact1.png") no-repeat left center;
             }
@@ -1197,20 +1238,24 @@ a:hover                        { text-decoration:none; }
             text-transform: uppercase;
         }
         .wrap-details p {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         .tbl-details {
             width: 100%;
         }
-            .tbl-details td {
-                padding-bottom: 45px;
-                font-size: 16px;
+            .tbl-details tr:nth-child(2n) {
+                background: #fff;
             }
-            .tbl-details td:first-child {
-                min-width: 125px;
-                font-size: 17px;
-                font-weight: bold;
-            }
+                .tbl-details td {
+                    padding: 20px 0 25px;
+                    font-size: 16px;
+                }
+                .tbl-details td:first-child {
+                    min-width: 125px;
+                    padding-left: 25px;
+                    font-size: 17px;
+                    font-weight: bold;
+                }
 
 #animate-top {
     display: block;
