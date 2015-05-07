@@ -869,6 +869,12 @@ a:hover                        { text-decoration:none; }
                         width: 100%;
                         vertical-align: middle;
                     }
+                    .view-good .wrap-foto .foto {
+                        display: none;
+                    }
+                    .view-good .wrap-foto .foto.active {
+                        display: table-cell;
+                    }
                 .old-price {
                     display: block;
                 }
@@ -968,6 +974,7 @@ a:hover                        { text-decoration:none; }
             width: 32px;
             height: 32px;
             background: url("../images/content/btn_increase.jpg") no-repeat;
+            cursor: pointer;
         }
         .view-good .wrap-foto {
             margin-bottom: 50px;
@@ -991,10 +998,13 @@ a:hover                        { text-decoration:none; }
             .slider-good .active {
                 border: 1px solid #FA8343;
             }
-                .slider-good a {
+                .slider-good span {
                     display: table-cell;
                     vertical-align: middle;
                 }
+                    .slider-good span img {
+                        max-width: 90%;
+                    }
         .desc-good {
             overflow: hidden;
         }

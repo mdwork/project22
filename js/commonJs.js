@@ -54,4 +54,17 @@ $(document).ready(function () {
     });
 
     $(".fancybox").fancybox();
+
+    $('.btn-increase').on('click', function(){
+        $('.foto.active').trigger('click');
+    });
+
+    $('.slider-good li').on('click', function(){
+        $(this).siblings().removeClass('active').end().addClass('active');
+
+        $('.view-good .wrap-foto .foto')
+            .removeClass('active')
+            .eq($(this).index())
+            .addClass('active');
+    });
 });
