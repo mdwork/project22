@@ -898,8 +898,7 @@ a:hover                        { text-decoration:none; }
                     font-size: 35px;
                     color: #fa8343;
                 }
-                    .price:before {
-                        content: 'цена:';
+                    .price span {
                         display: inline-block;
                         margin-right: 15px;
                         font-size: 12px;

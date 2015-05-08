@@ -115,7 +115,7 @@
         width: 320px;
         margin-right: 10px;
     }
-    .price:before,
+    .price span,
     .old-price .text {
         display: block;
     }
